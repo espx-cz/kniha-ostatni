@@ -1,0 +1,20 @@
+{
+  "name": "@adent/spiffs",
+  "version": "1.0.0",
+  "main": "spiffs.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/espx-cz/spiffs"
+    },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "commander": "^12.0.0"
+  }
+}

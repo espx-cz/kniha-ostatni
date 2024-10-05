@@ -1,0 +1,13 @@
+build/
+bme-go-idf/components
+*.bin
+*.elf
+*.map
+*.out
+*.a
+*.d
+*.o
+*.obj
+*.hex
+*.exe
+node_modules

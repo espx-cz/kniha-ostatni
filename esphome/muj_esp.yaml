@@ -1,0 +1,86 @@
+esphome:
+  name: display
+
+esp32:
+  board: esp32dev
+  framework:
+    type: arduino
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  password: ""
+
+ota:
+  password: ""
+
+wifi:
+  ssid: "ssid"
+  password: "moje_tajne_heslo"
+  
+    # Optional manual IP
+  manual_ip:
+    static_ip: 192.168.0.220
+    gateway: 192.168.0.254
+    subnet: 255.255.255.0
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Display Fallback Hotspot"
+    password: "eSqtjzqJOgJ4"
+
+# Povolení webového serveru pro ladění
+web_server:
+  port: 80
+
+
+captive_portal:
+
+spi:
+  clk_pin: GPIO18
+  mosi_pin: GPIO19
+
+display:
+  - platform: st7789v
+    model: "TTGO_TDISPLAY_135X240"
+    cs_pin: GPIO5
+    dc_pin: GPIO16
+    reset_pin: GPIO23
+    rotation: 270
+    lambda: |-
+      it.print(10, 10, id(fontarial), "Hello, TTGO!");
+      
+font:
+  - file: "arial.ttf"
+    id: fontarial
+    size: 20
+    
+    
+binary_sensor:
+  - platform: gpio
+    id: btnR
+    pin: GPIO35
+    name: "Tlačítko R"
+    filters:
+      - invert:
+      - delayed_on: 10ms
+      - delayed_off: 10ms
+    on_press:
+      - logger.log: "Tlačítko stisknuto"
+    on_release:
+      - logger.log: "Tlačítko uvolněno"    
+      
+  - platform: gpio
+    pin: GPIO0
+    id: btnL
+    name: "Tlačítko L"
+    filters:
+      - invert:
+      - delayed_on: 10ms
+      - delayed_off: 10ms
+    on_press:
+      - logger.log: "Tlačítko stisknuto"
+    on_release:
+      - logger.log: "Tlačítko uvolněno"      

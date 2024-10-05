@@ -1,0 +1,24 @@
+- [AudioMonitor](./AudioMonitor) - Příklad pro monitorování zvuku pomocí ESP32.
+- [blink_idf](./blink_idf) - Jednoduchý příklad blikání LED diody s použitím ESP-IDF.
+- [bme-go-idf](./bme-go-idf) - Příklad použití senzoru BME280 s ESP-IDF a programovacím jazykem Go.
+- [bme-mqtt-idf](./bme-mqtt-idf) - Příklad čtení dat ze senzoru BME280 a jejich odesílání přes MQTT protokol.
+- [bme-pure-idf](./bme-pure-idf) - Čistá implementace komunikace se senzorem BME280 pomocí ESP-IDF.
+- [bme_idf](./bme_idf) - Další příklad práce se senzorem BME280 v prostředí ESP-IDF.
+- [bme_mqtt](./bme_mqtt) - Alternativní implementace odesílání dat z BME280 přes MQTT.
+- [co2-idf](./co2-idf) - Měření koncentrace CO2 pomocí ESP32 a ESP-IDF.
+- [Esp32-Web-Update-and-SPIFFS-manager_en](./Esp32-Web-Update-and-SPIFFS-manager_en) - Webové rozhraní pro aktualizaci firmwaru a správu SPIFFS.
+- [ESPectrum](./ESPectrum) - Projekt emulátoru ZX Spectrum na ESP32.
+- [esphome](./esphome) - Příklady použití frameworku ESPHome.
+- [espnow-sender](./espnow-sender) - Implementace odesílání dat pomocí protokolu ESP-NOW.
+- [esptool](./esptool) - Nástroje pro práci s ESP32 a ESP8266.
+- [helloworld-idf](./helloworld-idf) - Klasický "Hello World" příklad pro ESP-IDF.
+- [helloworld-idf-dbg](./helloworld-idf-dbg) - Verze "Hello World" s podporou debugování.
+- [LaskaC3](./LaskaC3) - Projekt specifický pro vývojovou desku Laska C3.
+- [PMD85](./PMD85) - Emulátor počítače PMD 85 na ESP32.
+- [spiffs](./spiffs) - Příklady práce se souborovým systémem SPIFFS.
+- [spiffs-server-idf](./spiffs-server-idf) - Implementace webového serveru s využitím SPIFFS v ESP-IDF.
+- [spiffs-server-s3stamp-idf](./spiffs-server-s3stamp-idf) - Webový server s SPIFFS pro modul S3 Stamp.
+- [telegram](./telegram) - Příklad komunikace s Telegram API pomocí ESP32.
+- [wifi-prov-platformio](./wifi-prov-platformio) - WiFi provisioning v prostředí PlatformIO.
+- [wifimgr-stamps3-idf](./wifimgr-stamps3-idf) - Správce WiFi pro modul S3 Stamp v ESP-IDF.
+- [wifi_prov_mgr](./wifi_prov_mgr) - Správce WiFi provisioning pro ESP32.
